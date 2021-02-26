@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 5492184
+    url: jdbc:mysql://localhost:3306/tab_web?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
+config:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800
+    header: token
+server:
+  port: 8888
+  tomcat:
+    connection-timeout: 3000
